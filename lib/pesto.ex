@@ -11,7 +11,7 @@ defmodule Pesto do
       {:ok, finish_at} ->
         finish_at
         |> Duration.to_string
-        |> IO.puts
+        |> IO.write
       {:error, err} -> IO.puts(err)
     end
   end
