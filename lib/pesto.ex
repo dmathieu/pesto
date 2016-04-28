@@ -18,12 +18,12 @@ defmodule Pesto do
 
   def process([start: true]) do
     State.start_event()
-    IO.puts "Event started"
+    IO.write "Event started"
   end
 
   def process([stop: true]) do
     State.finish_event()
-    IO.puts "Event stopped"
+    IO.write "Event stopped"
   end
 
   defp parse_args(args) do
