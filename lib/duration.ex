@@ -6,7 +6,7 @@ defmodule Duration do
     |> make_string
   end
 
-  def make_string({-1, {_, _, _}}), do: "N/A"
+  def make_string({-1, {_, _, _}}), do: "finished"
   def make_string({0, {0, m, 0}}), do: "#{m}m"
   def make_string({0, {0, 0, s}}), do: "#{s}s"
   def make_string({0, {h, 0, 0}}), do: "#{h}h"

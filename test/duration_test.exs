@@ -15,7 +15,7 @@ defmodule DurationTest do
     now = :calendar.universal_time
     |> :calendar.datetime_to_gregorian_seconds
 
-    assert Duration.to_string((now - 5) |> :calendar.gregorian_seconds_to_datetime) == "N/A"
+    assert Duration.to_string((now - 5) |> :calendar.gregorian_seconds_to_datetime) == "finished"
   end
 
 end
